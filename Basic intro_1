@@ -14,3 +14,45 @@ function myFunction(){
   var y = "Today is";
   
   console.log("Today is"+x)};
+  
+  ##true/false
+  function myFunction(){
+
+  var x = new Date();
+  var y = "現在是";
+  var z = true;
+  var w = false;
+  
+  console.log(z);
+  Logger.log(w);
+}
+
+
+function myFunction(){
+
+var firstNum = SpreadsheetApp.getActiveSpreadsheet()
+.getActiveSheet().getRange(2,1).getValue();
+
+console.log(firstNum);
+}
+
+
+function myFunction(){
+
+var firstNum = SpreadsheetApp.getActiveSpreadsheet()
+.getActiveSheet().getRange(3,3).getValue();
+
+var secondNum = SpreadsheetApp.getActiveSpreadsheet()
+.getActiveSheet().getRange(3,5).getValue();
+
+var outcome = firstNum * secondNum;
+
+SpreadsheetApp.getActiveSpreadsheet()
+.getActiveSheet().getRange(3,4).setValue(outcome);
+
+
+//console.log(firstNum);
+//console.log(secondNum);
+}
+
+
