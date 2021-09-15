@@ -5,3 +5,12 @@ function myFunction(){
   const z = 3;
   
   console.log(x*5)};
+  
+  #new Date()
+  
+  function myFunction(){
+
+  var x = new Date();
+  var y = "Today is";
+  
+  console.log("Today is"+x)};
