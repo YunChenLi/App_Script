@@ -56,3 +56,31 @@ SpreadsheetApp.getActiveSpreadsheet()
 }
 
 
+var secondNum = SpreadsheetApp.getActiveSpreadsheet()
+.getActiveSheet().getRange(3,5).getValue();
+
+var outcome = firstNum * secondNum;
+
+SpreadsheetApp.getActiveSpreadsheet()
+.getActiveSheet().getRange(3,4).setValue(outcome);
+
+
+//console.log(firstNum);
+//console.log(secondNum);
+}
+
+function demoarray(){
+  //var array = [1, 'apple',3,8];
+  //console.log(array[0]+array[2]);
+  var dataArray = SpreadsheetApp.getActiveSpreadsheet()
+  .getActiveSheet().getRange(3,3,4,15).getValues();
+  var outcome = [[dataArray[0][0]*dataArray[0][2],dataArray[0][0]+dataArray[0][2]]];
+  SpreadsheetApp.getActiveSpreadsheet()
+  .getActiveSheet().getRange(3,4,1,2).setValues(outcome);
+ 
+
+//console.log(dataArray[0][0]*dataArray[0][2]);
+}
+
+
+
