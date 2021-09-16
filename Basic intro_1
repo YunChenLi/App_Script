@@ -33,6 +33,33 @@ function myFunction(){
 var firstNum = SpreadsheetApp.getActiveSpreadsheet()
 .getActiveSheet().getRange(2,1).getValue();
 
+
+var ss = SpreadsheetApp.getActiveSpreadsheet()
+.getActiveSheet()
+
+var colorRef1 = ss.getRange('C3', 'F3', 'I3','L3').getBackgroundColor(); //the color reference you put at A1 location
+
+function function1(){
+    var range = ss.getActiveRange('C3', 'F3', 'I3','L3'); // get range you selected
+  
+    if (range == "green"){
+        console.log(ss.getRange(3,3).setBackground("green"))
+    }
+    else if (range )
+    
+    range.setBackground(colorRef1); // the color reference
+    range.setBorder(true, true, true, true, false, false);//setBorder(top, left, bottom, right, vertical, horizontal)
+    console.log(range.getA1Notation());
+
+
+
+Q2	Please make column "B" background color automatically based on the condition - 			
+
+	Green - If all of the column "C", "F", "I", "L" background color are green			
+	Yellow - If one of the column "C", "F", "I", "L" background color is yellow			
+	Red - If one of the column "C", "F", "I", "L" background color is red			
+	Grey - No data for all column "C", "F", "I", "L" 			
+
 console.log(firstNum);
 }
 
